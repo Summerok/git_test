@@ -4,24 +4,24 @@ from donnees import *
 
 
 continueJeu = ''
-#Début du jeu
+#DÃ©but du jeu du hangman
 print("=====================================")
-print("EL AHORCADO : Crónica de 1792/93")
+print("EL AHORCADO : CrÃ³nica de 1792/93")
 print("=====================================")
 print("")
 nomJoueur = introduirUtilisateur()
 
 if chargerScore() == None:
     scores[nomJoueur] = 0
-    print("{}: Hola {}, ¿es tu primera vez? No te había visto por aquí.\nBienvenida a este fascinante juego, toma asiento y a jugar!".format(present, nomJoueur))
+    print("{}: Hola {}, Â¿es tu primera vez? No te habÃ­a visto por aquÃ­.\nBienvenida a este fascinante juego, toma asiento y a jugar!".format(present, nomJoueur))
 else:
     scores = chargerScore()
     try:
         scores[nomJoueur]
-        print("{}: Hola {}, ¿qué hay de nuevo?\nGuardas una puntuación de {}. ¡A jugar!".format(present, nomJoueur, scores[nomJoueur]))
+        print("{}: Hola {}, Â¿quÃ© hay de nuevo?\nGuardas una puntuaciÃ³n de {}. Â¡A jugar!".format(present, nomJoueur, scores[nomJoueur]))
     except KeyError:
         scores[nomJoueur] = 0
-        print("{}: Hola {}, ¿es tu primera vez? No te había visto por aquí.\nBienvenida a este fascinante juego, toma asiento y a jugar!".format(present, nomJoueur))
+        print("{}: Hola {}, Â¿es tu primera vez? No te habÃ­a visto por aquÃ­.\nBienvenida a este fascinante juego, toma asiento y a jugar!".format(present, nomJoueur))
 
 gestionEnter()
 
@@ -54,11 +54,11 @@ while continueJeu == '':
 
     else:
         print("=====================================")
-        print("¡ENHORABUENA! Encontraste la palabra")
+        print("Â¡ENHORABUENA! Encontraste la palabra")
         print("=====================================")
 
-    print("{}: {}, tu puntuación es de {}\nTu puntuación total es de {}".format(present, nomJoueur, scr, scores[nomJoueur]+scr))
+    print("{}: {}, tu puntuaciÃ³n es de {}\nTu puntuaciÃ³n total es de {}".format(present, nomJoueur, scr, scores[nomJoueur]+scr))
     continueJeu = continuerJeu()
     scores[nomJoueur] += scr 
     enregistrerScore(scores)
-print("{}: Que tengas un buen día {}. Hasta pronto".format(present, nomJoueur))
+print("{}: Que tengas un buen dÃ­a {}. Hasta pronto".format(present, nomJoueur))
