@@ -4,7 +4,8 @@ listeMots = ["verano",
               "mercado",
               "calor",
               "lecturas",
-              "paris"]
+              "paris",
+              "canicule"]
 
 nombreEssais = 8
 
