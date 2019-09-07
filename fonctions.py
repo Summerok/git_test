@@ -72,7 +72,7 @@ def continuerJeu():
         return cont
 
 def recupLettre():
-    '''Objet: gestion de l'introduction de la lettre'''
+    '''Objet: gestion de l'introduction de la lettre pour la phase de recherche'''
     rec_lettre = input("{}: Introduce una letra nueva\n".format(present)).lower()
     if len(rec_lettre) > 1 or not rec_lettre.isalpha():
         print("{}: No reconozco una letra en lo que has introducido".format(present))
