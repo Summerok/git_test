@@ -6,7 +6,7 @@ from donnees import *
 continueJeu = ''
 #Début du jeu
 print("=====================================")
-print("EL AHORCADO : Crónica de 1792")
+print("EL AHORCADO : Crónica de 1792/93")
 print("=====================================")
 print("")
 nomJoueur = introduirUtilisateur()
