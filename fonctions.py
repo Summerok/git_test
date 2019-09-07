@@ -7,7 +7,7 @@ from donnees import *
 
 '''Fichier des fonctions utilisés par le jeu du vieux pendu'''
 def choixMot(*liste):
-    '''Objet: choisir au hasard un petit mot de la liste de mots pour le jeu'''
+    '''Objet: choisir au hasard un mot de la liste de mots pour le jeu'''
     rangDeMots = len(liste)
     i = random.randrange(rangDeMots)
     return liste[i]
